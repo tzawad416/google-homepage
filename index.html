@@ -6,16 +6,38 @@
         <title>Google</title>
     </head>
     <body>
+        /* Script for JS fundamental lesson exercises */
         <script>
-            /* Script for JS fundamental lesson exercise */
-            let numbers = [23, 32, 9, 14, 5, 19];
+            /* let numbers = [23, 32, 9, 14, 5, 19];
             const MAX = 57;
             let actual = MAX - 13;
             let percentage = actual / MAX;
             console.log(`Sum of ${numbers[0]} and ${numbers[1]}: ${numbers[0] + numbers[1]}`);
             console.log(`Sum of all numbers in array: ${numbers.reduce((a, b) => a + b, 0)}`);
             console.log(`Division of ${numbers[2]} by ${numbers[3]}: ${(numbers[2] / numbers[3]).toFixed(4)}`);
-            console.log(`Percentage value: ${(percentage*100).toFixed(2)}%`)
+            console.log(`Percentage value: ${(percentage*100).toFixed(2)}%`); */
+            function add7(num1) {
+                return num1 + 7;
+            }
+            function multiply(num1, num2) {
+                return num1 * num2;
+            }
+            function capitalize(string1) {
+                strlength = string1.length;
+                return ((strlength > 0) ? string1[0].toUpperCase() : "") + ((strlength > 1) ? (string1.substring(1, strlength)).toLowerCase() : "");
+            }
+            function lastletter(string1) {
+                strlength = string1.length;
+                return (strlength > 0) ? string1.substring(strlength - 1, strlength) : "";
+            }
+            function launchfizzbuzz() {
+                maxnum = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+                for (i = 1; i <= maxnum; i++) {
+                    let fbstring = ((i % 3 == 0)? "Fizz" : "") + ((i % 5 == 0)? "Buzz" : "");
+                    console.log((fbstring == "") ? i : fbstring);
+                }
+                return;
+            }
         </script>
         <div class="homepage">
             <div class="menulinks">
